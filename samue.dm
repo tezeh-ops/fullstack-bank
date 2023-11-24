@@ -9,7 +9,7 @@ These application is a NODEJS application that we will deploy in docker in the f
 
 These application a Banking application the we are trying to deploy.
 
-STeps to follow in this deployment
+STEPS TO FOLLOW TO DEPLOPLY THE APP
 
 > Launch and Ec2 instance < ubuntu  t2.miduim >
 
