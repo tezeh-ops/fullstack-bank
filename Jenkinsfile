@@ -51,7 +51,7 @@ pipeline {
         
         stage('Backend') {
             steps {
-                dir('/root/.jenkins/workspace/Bank/app/backend') {
+                 dir("${WORKSPACE}/app/backend") {   //we i'm using ("${WORKSPACE}") to point the path to my dietory because by default is where  all the build take insted of us using apsolute path to point the directory e.g=   //dir('/root/.jenkins/workspace/Bank/app/backend') {
                     sh "npm install"
                 }
             }
@@ -59,7 +59,7 @@ pipeline {
         
         stage('frontend') {
             steps {
-                dir('/root/.jenkins/workspace/Bank/app/frontend') {
+                 dir("${WORKSPACE}/app/frontend") {   //dir('/root/.jenkins/workspace/Bank/app/backend') {
                     sh "npm install"
                 }
             }
