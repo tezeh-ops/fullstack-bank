@@ -67,7 +67,7 @@ pipeline {
         
         stage('Deploy to Conatiner') {
             steps {
-                sh "npm run compose:up -d"
+                sh "npm run compose:up -d"   // run our containers in in detached mode soon the pipeline can exit 
             }
         }
     }
