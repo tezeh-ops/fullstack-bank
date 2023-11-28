@@ -11,7 +11,7 @@ These application a Banking application the we are trying to deploy.
 
 STEPS TO FOLLOW TO DEPLOPLY THE APP
 
-> Launch and Ec2 instance < ubuntu  t2.miduim >
+> Launch and Ec2 instance < ubuntu  t3.xlarge>
 
 > Intall the varous tools: usse the REPO cor the commands < https://github.com/tezeh-ops/installation_scripts >
 # jenkins
@@ -25,10 +25,16 @@ STEPS TO FOLLOW TO DEPLOPLY THE APP
 
 FOR PLUGINS TO INSTALL IN JENKINS :
 
-> SonarQube
-> owasp dependency-check 
+> SonarQube ( and configure it to talk to the SonarQube server using token)
 
->NODEJS
-> jdk ( Eclipse Temurin installer)
+> owasp dependency-check  ( and configure it: to set up < dependency-check> in the tool config after we have install it plugin: < go to too : click add< dependency-check> entere any name e.g < DC > then
+        // click < install automatically > the select the drop down and < select using GitHub> then choose any version and < apply/save 
+ )
+
+>NODEJS ( we can can install it on our pos or set the plugin up in the jenkins UI )
+
+> jdk ( Eclipse Temurin installer) ( we can also configure it under tools with different version and point them out in our jenkinsfile  as seen it our jenkinsfile)
+
+> sonar-scanner { And onfigure it under Tools  }
 
 > 
