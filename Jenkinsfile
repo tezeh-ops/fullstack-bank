@@ -1,9 +1,9 @@
 pipeline {
     agent any
     
-    tools{
+    tools{                      // refrencing the tools we have set up to use in our  jenkins tool configuration  aand put the tools here we can set differen vesion 
         jdk 'jdk17'
-        nodejs 'node16'
+        nodejs 'node16'       // that will fit our projects 
         
     }
     
